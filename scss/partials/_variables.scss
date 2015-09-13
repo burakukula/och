@@ -16,10 +16,25 @@
 // 1. Colors
 //
 
+$color-primary:     #006fb9; // brand primary blue color
+$color-secondary:   #FF979C; // brand secondary color is light red
+
+$gray:              #3a3f42; // base gray
+$gray-light:        #8a8a8a; // secondary gray
+$gray-lighter:      #b3b3b3; // light gray
+$gray-lightest:     #f5f5f5; // lightest gray
+
+$red-light:         #f64344; // light red
+
+$blue-light:        #8ac2e8; // light blue advert on homepage
+$pink-light:        #e88aac; // light pink advert on homepage
+$orange-light:      #fda78a; // light orange advert on homepage
+
 // 2. Typography
 //
 
-$font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-base: 'Aleoregular','Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-light: 'Aleolight','Helvetica Neue', Helvetica, Arial, sans-serif;
 
 $font-size-root:            16px;
 
@@ -70,3 +85,7 @@ $input-border:      $gray-lighter;
 
 $border-radius:          .25rem;
 $input-box-shadow:        inset 0 1px 1px rgba(0,0,0,.075);
+
+h1 {
+  font-family: $font-family-light;
+}

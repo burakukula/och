@@ -7,6 +7,10 @@ import sourcemaps from 'gulp-sourcemaps';
 import livereload from 'gulp-livereload';
 import notify from 'gulp-notify';
 
+// some basic configuration
+const config = {
+  theme: 'src/css'
+};
 
 // compile SASS files
 gulp.task('styles', () => {
@@ -30,7 +34,7 @@ gulp.task('styles', () => {
       .pipe(sass().on('error', notify.onError('<%= error.message %>')))
       .pipe(autoprefixer(BROWSERS))
       .pipe(sourcemaps.write('.'))
-      .pipe(gulp.dest(config.theme + 'css/'))
+      .pipe(gulp.dest(config.theme))
       .pipe(size({title: 'CSS:'}))
       .pipe(livereload());
 

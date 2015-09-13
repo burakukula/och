@@ -1,0 +1,7 @@
+# Exclude editor meta
+.idea/
+
+# Exclude local build artefacts
+node_modules/*
+
+.DS_Store

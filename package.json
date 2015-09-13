@@ -1,0 +1,32 @@
+{
+  "name": "och",
+  "version": "1.0.0",
+  "description": "open culture hack",
+  "scripts": {
+    "test": "echo \"TODO: TBD!\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "authors": [
+    "Patrycja Radaczynska <patrycja.radaczynska@creativestyle.pl>"
+  ],
+  "private": true,
+  "devDependencies": {
+    "babel-core": "^5.8.22",
+    "bower": "^1.5.1",
+    "flexboxgrid": "^6.2.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-livereload": "^3.8.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-scss-lint": "^0.2.4",
+    "gulp-size": "^2.0.0",
+    "gulp-sourcemaps": "^1.5.2"
+  },
+  "dependencies": {
+    "flexboxgrid": "^6.2.0"
+  }
+}

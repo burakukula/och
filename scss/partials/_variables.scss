@@ -1,0 +1,72 @@
+//
+// SASS variable definition
+//
+// Variable format should follow the `$component-modifier-state-property` order.
+// ----------------------------------------------------------------------------
+
+// Table of Contents
+//
+// 1. Colors
+// 2. Typography
+// 3. Body color settings
+// 4. Links
+// 5. Responsive breakpoints
+
+
+// 1. Colors
+//
+
+// 2. Typography
+//
+
+$font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$font-size-root:            16px;
+
+$font-size-base:            1rem;
+$font-size-lg:           1.25rem;
+$font-size-sm:            .85rem;
+$font-size-xs:            .75rem;
+
+$font-size-h1:            2.5rem;
+$font-size-h2:              2rem;
+$font-size-h3:           1.75rem;
+$font-size-h4:            1.5rem;
+$font-size-h5:           1.25rem;
+$font-size-h6:              1rem;
+
+$line-height:                1.5;
+
+// 3. Body color settings
+//
+
+$body-bg:                  #fff;
+$body-color:              $gray;
+
+// 4. Links
+//TODO define hover color for links
+
+$link-hover-color:    $red-light;
+
+// 5. Responsive breakpoints
+//
+$breakpoint-small:         480px;
+$breakpoint-medium:        768px;
+$breakpoint-big:           960px;
+$breakpoint-large:        1200px;
+
+
+// 6. Layout & grid
+//
+$grid-gutter:              1rem;
+$input-padding-x:        .75rem;
+$input-padding-y:       .375rem;
+
+// 7. Forms & inputs
+//
+$input-color:             $gray;
+$input-bg:             $body-bg;
+$input-border:      $gray-lighter;
+
+$border-radius:          .25rem;
+$input-box-shadow:        inset 0 1px 1px rgba(0,0,0,.075);

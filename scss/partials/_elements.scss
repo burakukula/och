@@ -1,0 +1,32 @@
+ul {
+	list-style: none;
+	padding: 0;
+}
+.och-top {
+	&__info {
+		padding: 40px;
+		&--logo {
+			font-size: $font-size-h2;
+		}
+		&--primary {
+			color: $color-primary;
+		}
+	}
+	&__place {
+		padding: 40px;
+	}
+}
+
+.och-main,
+.och-register {
+	padding: 40px;
+}
+.och-program{
+	&__primary {
+		font-weight: bold;
+		padding-right: 10px;
+	}
+	&__colored {
+		color: $color-primary;
+	}
+}

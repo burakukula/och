@@ -16,8 +16,8 @@
 // 1. Colors
 //
 
-$color-primary:     #ff57ff; // brand primary blue color
-$color-secondary:   #FF979C; // brand secondary color is light red
+$color-primary:     #ff57ff;
+$color-secondary:   #FF979C;
 
 $gray:              #3a3f42; // base gray
 
@@ -54,7 +54,7 @@ $body-color:              $gray;
 // 4. Links
 //TODO define hover color for links
 
-$link-hover-color:    $body-bg;
+$link-hover-color:    $color-secondary;
 
 // 5. Responsive breakpoints
 //

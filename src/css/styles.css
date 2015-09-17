@@ -2,26 +2,46 @@ ul {
   list-style: none;
   padding: 0; }
 
-.och-top__info {
-  padding: 40px; }
-  .och-top__info--logo {
-    font-size: 2rem; }
-  .och-top__info--primary {
-    color: #ff57ff; }
+.och-layout__row--top {
+  background: url("/src/images/background_image.jpg") no-repeat;
+  height: 65vh;
+  position: relative; }
+  .och-layout__row--top .och-logo {
+    position: absolute;
+    bottom: 0; }
+    .och-layout__row--top .och-logo__element {
+      background-color: #fff;
+      padding: 1rem; }
+      .och-layout__row--top .och-logo__element img {
+        width: 100%;
+        height: auto; }
 
-.och-top__place {
+.och-main__info,
+.och-main__place,
+.och-main__program,
+.och-main__about {
   padding: 40px; }
 
-.och-main,
-.och-register {
-  padding: 40px; }
+.och-main__info--primary {
+  color: #ff57ff; }
 
-.och-program__primary {
+.och-main__program__primary {
   font-weight: bold;
   padding-right: 10px; }
 
-.och-program__colored {
+.och-main__program__colored {
   color: #ff57ff; }
+
+.och-main__register {
+  position: fixed;
+  margin-top: 40px; }
+  .och-main__register--button {
+    display: inline-block;
+    padding: 1rem;
+    border: 2px solid #3a3f42;
+    margin-top: 1rem; }
+  .och-main__register--info--bold {
+    font-weight: bold; }
 
 @font-face {
   font-family: 'Aleoregular';
@@ -114,7 +134,7 @@ a {
   color: #ff57ff;
   text-decoration: none; }
   a:hover {
-    color: #fff; }
+    color: #FF979C; }
 
 pre {
   margin-top: 0;

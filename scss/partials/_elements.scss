@@ -2,31 +2,60 @@ ul {
 	list-style: none;
 	padding: 0;
 }
-.och-top {
-	&__info {
-		padding: 40px;
-		&--logo {
-			font-size: $font-size-h2;
+.och-layout__row {
+	&--top {
+		background: url("/src/images/background_image.jpg") no-repeat;
+		height: 65vh;
+		position: relative;
+		.och-logo {
+			position: absolute;
+			bottom: 0;
+			&__element {
+				background-color: #fff;
+				padding: 1rem;
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
 		}
+	}
+}
+
+.och-main {
+	&__info,
+	&__place,
+	&__program,
+	&__about {
+		padding: 40px;
+	}
+	&__info {
 		&--primary {
 			color: $color-primary;
 		}
 	}
-	&__place {
-		padding: 40px;
+	&__program {
+		&__primary {
+			font-weight: bold;
+			padding-right: 10px;
+		}
+		&__colored {
+			color: $color-primary;
+		}
 	}
-}
-
-.och-main,
-.och-register {
-	padding: 40px;
-}
-.och-program{
-	&__primary {
-		font-weight: bold;
-		padding-right: 10px;
-	}
-	&__colored {
-		color: $color-primary;
+	&__register {
+		position: fixed;
+		margin-top: 40px;
+		&--button {
+			display: inline-block;
+			padding: 1rem;
+			border: 2px solid $gray;
+			margin-top: 1rem;
+		}
+		&--info {
+			&--bold {
+				font-weight: bold;
+			}
+		}
 	}
 }

@@ -1,11 +1,41 @@
+body {
+	font-weight: 300;
+}
 ul {
 	list-style: none;
 	padding: 0;
 }
 .och-layout__row {
+	&--bottom {
+		background-color: #fff;
+		.bottom-content {
+			padding: 20px 40px 10px 40px;
+			background-color: #fff;
+			&__logotypes {
+				padding: 0 40px 60px 40px;
+				background-color: #fff;
+				@media (max-width: $breakpoint-medium) {
+					padding: 10px 15px;
+				}
+			}
+			img {
+				width: 100%;
+				height: auto;
+			}
+			&__partners {
+				img {
+					width: 80%;
+				}
+			}
+			@media (max-width: $breakpoint-medium) {
+				padding: 10px 15px;
+			}
+		}
+	}
 	&--top {
-		background: url("/src/images/background_image.jpg") no-repeat;
-		height: 65vh;
+		// background: url("/src/images/background_image.jpg") no-repeat;
+		// background-size: cover;
+		height: 25vh;
 		position: relative;
 		.och-logo {
 			position: absolute;
@@ -19,6 +49,9 @@ ul {
 				}
 			}
 		}
+		@media (max-width: $breakpoint-medium) {
+			height: 15vh;
+		}
 	}
 }
 
@@ -27,17 +60,28 @@ ul {
 	&__place,
 	&__program,
 	&__about {
-		padding: 40px;
+		padding: 20px 40px;
+		@media (max-width: $breakpoint-medium) {
+			padding: 10px 15px;
+		}
 	}
 	&__info {
 		&--primary {
 			color: $color-primary;
 		}
+		&--bold {
+			font-weight: 700;
+		}
 	}
 	&__program {
+		margin-bottom: 20px;
+		display: inline-block;
 		&__primary {
 			font-weight: bold;
 			padding-right: 10px;
+			margin-bottom: 0.3rem;
+			margin-top: 1rem;
+			position: relative;
 		}
 		&__colored {
 			color: $color-primary;
@@ -45,17 +89,109 @@ ul {
 	}
 	&__register {
 		position: fixed;
-		margin-top: 40px;
+		margin: 40px;
 		&--button {
 			display: inline-block;
 			padding: 1rem;
 			border: 2px solid $gray;
 			margin-top: 1rem;
+			width: 50%;
+			&:hover {
+				border: 5px solid $gray;
+				margin-top: 0.7rem;
+			}
+			img {
+				width: 150%;
+			}
 		}
 		&--info {
 			&--bold {
 				font-weight: bold;
 			}
 		}
+	}
+}
+.section {
+	&__title {
+		margin-bottom: 15px;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+.circle {
+	background-image: url('/src/images/OCH_circle-06.png');
+	position: absolute;
+	width: 90px;
+	height: 30px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	left: 105px;
+}
+.bottom-item {
+	@media (max-width: $breakpoint-medium) {
+		padding: 30px 0;
+	}
+	&__content {
+		height: 150px;
+		background-size: 50% auto;
+		background-repeat: no-repeat;
+		background-position: center center;
+		margin-right: 40px;
+		@media (max-width: $breakpoint-medium) {
+			margin-right: 0;
+			height: 150px;
+		}
+		&--ekultura {
+			background-image: url('/src/images/logotypes/ekultura.jpg');
+		}
+		&--creative {
+			background-image: url('/src/images/logotypes/cslogo_color.svg');
+		}
+		&--wis {
+			background-image: url('/src/images/logotypes/wis_poziom.jpg');
+		}
+		&--koduj {
+			background-image: url('/src/images/logotypes/logo-kodujdlapolski.png');
+		}
+		&--crossweb {
+			background-image: url('/src/images/logotypes/logo_crossweb.png');
+		}
+		&--webmuses {
+			background-image: url('/src/images/logotypes/logo_webmuses.png');
+		}
+		&--vivid {
+			background-image: url('/src/images/logotypes/logo_vivid.jpg');
+		}
+		&--kazimir {
+			background-image: url('/src/images/logotypes/logo_kazimir.png');
+		}
+		&--mnk {
+			background-image: url('/src/images/logotypes/logo_mnk.jpg');
+		}
+	}
+
+}
+
+@media (max-width: $breakpoint-medium) {
+	.register__mobile {
+		display: block;
+		margin-bottom: 30px;
+		.och-main__register {
+			position: initial;
+			margin: 10px 15px;
+		}
+	}
+	.register__desktop {
+		display: none;
+	}
+}
+@media (min-width: $breakpoint-medium) {
+	.register__mobile {
+		display: none;
+	}
+	.register__desktop {
+		display: block;
 	}
 }

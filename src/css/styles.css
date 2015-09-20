@@ -1,10 +1,32 @@
+body {
+  font-weight: 300; }
+
 ul {
   list-style: none;
   padding: 0; }
 
+.och-layout__row--bottom {
+  background-color: #fff; }
+  .och-layout__row--bottom .bottom-content {
+    padding: 20px 40px 10px 40px;
+    background-color: #fff; }
+    .och-layout__row--bottom .bottom-content__logotypes {
+      padding: 0 40px 60px 40px;
+      background-color: #fff; }
+      @media (max-width: 768px) {
+        .och-layout__row--bottom .bottom-content__logotypes {
+          padding: 10px 15px; } }
+    .och-layout__row--bottom .bottom-content img {
+      width: 100%;
+      height: auto; }
+    .och-layout__row--bottom .bottom-content__partners img {
+      width: 80%; }
+    @media (max-width: 768px) {
+      .och-layout__row--bottom .bottom-content {
+        padding: 10px 15px; } }
+
 .och-layout__row--top {
-  background: url("/src/images/background_image.jpg") no-repeat;
-  height: 65vh;
+  height: 25vh;
   position: relative; }
   .och-layout__row--top .och-logo {
     position: absolute;
@@ -15,46 +37,140 @@ ul {
       .och-layout__row--top .och-logo__element img {
         width: 100%;
         height: auto; }
+  @media (max-width: 768px) {
+    .och-layout__row--top {
+      height: 15vh; } }
 
 .och-main__info,
 .och-main__place,
 .och-main__program,
 .och-main__about {
-  padding: 40px; }
+  padding: 20px 40px; }
+  @media (max-width: 768px) {
+    .och-main__info,
+    .och-main__place,
+    .och-main__program,
+    .och-main__about {
+      padding: 10px 15px; } }
 
 .och-main__info--primary {
   color: #ff57ff; }
 
-.och-main__program__primary {
-  font-weight: bold;
-  padding-right: 10px; }
+.och-main__info--bold {
+  font-weight: 700; }
 
-.och-main__program__colored {
-  color: #ff57ff; }
+.och-main__program {
+  margin-bottom: 20px;
+  display: inline-block; }
+  .och-main__program__primary {
+    font-weight: bold;
+    padding-right: 10px;
+    margin-bottom: 0.3rem;
+    margin-top: 1rem;
+    position: relative; }
+  .och-main__program__colored {
+    color: #ff57ff; }
 
 .och-main__register {
   position: fixed;
-  margin-top: 40px; }
+  margin: 40px; }
   .och-main__register--button {
     display: inline-block;
     padding: 1rem;
     border: 2px solid #3a3f42;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    width: 50%; }
+    .och-main__register--button:hover {
+      border: 5px solid #3a3f42;
+      margin-top: 0.7rem; }
+    .och-main__register--button img {
+      width: 150%; }
   .och-main__register--info--bold {
     font-weight: bold; }
 
+.section__title {
+  margin-bottom: 15px; }
+  .section__title img {
+    width: 100%;
+    height: auto; }
+
+.circle {
+  background-image: url("/src/images/OCH_circle-06.png");
+  position: absolute;
+  width: 90px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 105px; }
+
+@media (max-width: 768px) {
+  .bottom-item {
+    padding: 30px 0; } }
+
+.bottom-item__content {
+  height: 150px;
+  background-size: 50% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 40px; }
+  @media (max-width: 768px) {
+    .bottom-item__content {
+      margin-right: 0;
+      height: 150px; } }
+  .bottom-item__content--ekultura {
+    background-image: url("/src/images/logotypes/ekultura.jpg"); }
+  .bottom-item__content--creative {
+    background-image: url("/src/images/logotypes/cslogo_color.svg"); }
+  .bottom-item__content--wis {
+    background-image: url("/src/images/logotypes/wis_poziom.jpg"); }
+  .bottom-item__content--koduj {
+    background-image: url("/src/images/logotypes/logo-kodujdlapolski.png"); }
+  .bottom-item__content--crossweb {
+    background-image: url("/src/images/logotypes/logo_crossweb.png"); }
+  .bottom-item__content--webmuses {
+    background-image: url("/src/images/logotypes/logo_webmuses.png"); }
+  .bottom-item__content--vivid {
+    background-image: url("/src/images/logotypes/logo_vivid.jpg"); }
+  .bottom-item__content--kazimir {
+    background-image: url("/src/images/logotypes/logo_kazimir.png"); }
+  .bottom-item__content--mnk {
+    background-image: url("/src/images/logotypes/logo_mnk.jpg"); }
+
+@media (max-width: 768px) {
+  .register__mobile {
+    display: block;
+    margin-bottom: 30px; }
+    .register__mobile .och-main__register {
+      position: initial;
+      margin: 10px 15px; }
+  .register__desktop {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .register__mobile {
+    display: none; }
+  .register__desktop {
+    display: block; } }
+
 @font-face {
-  font-family: 'Aleoregular';
-  src: url("../web_fonts/aleo_regular_macroman/Aleo-Regular-webfont.eot");
-  src: url("../web_fonts/aleo_regular_macromant/Aleo-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../web_fonts/aleo_regular_macroman/Aleo-Regular-webfont.woff") format("woff"), url("../web_fonts/aleo_regular_macroman/Aleo-Regular-webfont.ttf") format("truetype"), url("../web_fonts/aleo_regular_macroman/Aleo-Regular-webfont.svg#aleoregular") format("svg");
-  font-weight: normal;
+  font-family: 'Aleo';
+  src: url("../web_fonts/aleo_light/Aleo-Light-webfont.eot");
+  src: url("../web_fonts/aleo_light/Aleo-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../web_fonts/aleo_light/Aleo-Light-webfont.woff") format("woff"), url("../web_fonts/aleo_light/Aleo-Light-webfont.ttf") format("truetype"), url("../web_fonts/aleo_light/Aleo-Light-webfont.svg#aleolight") format("svg");
+  font-weight: 300;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Aleolight';
-  src: url("../web_fonts/aleo_light_macroman/Aleo-Light-webfont.eot");
-  src: url("../web_fonts/aleo_light_macroman/Aleo-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../web_fonts/aleo_light_macroman/Aleo-Light-webfont.woff") format("woff"), url("../web_fonts/aleo_light_macroman/Aleo-Light-webfont.ttf") format("truetype"), url("../web_fonts/aleo_light_macroman/Aleo-Light-webfont.svg#aleolight") format("svg");
-  font-weight: normal;
+  font-family: 'Aleo';
+  src: url("../web_fonts/aleo_regular/Aleo-Regular-webfont.eot");
+  src: url("../web_fonts/aleo_regular/Aleo-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../web_fonts/aleo_regular/Aleo-Regular-webfont.woff") format("woff"), url("../web_fonts/aleo_regular/Aleo-Regular-webfont.ttf") format("truetype"), url("../web_fonts/aleo_regular/Aleo-Regular-webfont.svg#aleoregular") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Aleo';
+  src: url("../web_fonts/aleo_bold/Aleo-Bold-webfont.eot");
+  src: url("../web_fonts/aleo_bold/Aleo-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../web_fonts/aleo_bold/Aleo-Bold-webfont.woff") format("woff"), url("../web_fonts/aleo_bold/Aleo-Bold-webfont.ttf") format("truetype"), url("../web_fonts/aleo_bold/Aleo-Bold-webfont.svg#aleobold") format("svg");
+  font-weight: 700;
   font-style: normal; }
 
 html {
@@ -85,7 +201,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Aleoregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Aleo", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #3a3f42;
@@ -134,7 +250,7 @@ a {
   color: #ff57ff;
   text-decoration: none; }
   a:hover {
-    color: #FF979C; }
+    color: #00ffff; }
 
 pre {
   margin-top: 0;

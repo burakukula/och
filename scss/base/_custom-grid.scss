@@ -11,7 +11,7 @@
   &__container {
     padding: 0;
     @extend .container;
-    @extend .center-block
+    @extend .center-block;
   }
 	.col-centered{
 	    float: none;

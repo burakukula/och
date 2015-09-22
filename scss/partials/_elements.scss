@@ -139,6 +139,9 @@ ul {
 		background-repeat: no-repeat;
 		background-position: center center;
 		margin-right: 40px;
+		&:hover {
+			opacity: 0.8;
+		}
 		@media (max-width: $breakpoint-medium) {
 			margin-right: 0;
 			height: 150px;
@@ -150,7 +153,7 @@ ul {
 			background-image: url('/src/images/logotypes/cslogo_color.svg');
 		}
 		&--wis {
-			background-image: url('/src/images/logotypes/wis_poziom.jpg');
+			background-image: url('/src/images/logotypes/WIS_poziom.jpg');
 		}
 		&--koduj {
 			background-image: url('/src/images/logotypes/logo-kodujdlapolski.png');

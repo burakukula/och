@@ -113,6 +113,8 @@ ul {
   background-repeat: no-repeat;
   background-position: center center;
   margin-right: 40px; }
+  .bottom-item__content:hover {
+    opacity: 0.8; }
   @media (max-width: 768px) {
     .bottom-item__content {
       margin-right: 0;
@@ -122,7 +124,7 @@ ul {
   .bottom-item__content--creative {
     background-image: url("/src/images/logotypes/cslogo_color.svg"); }
   .bottom-item__content--wis {
-    background-image: url("/src/images/logotypes/wis_poziom.jpg"); }
+    background-image: url("/src/images/logotypes/WIS_poziom.jpg"); }
   .bottom-item__content--koduj {
     background-image: url("/src/images/logotypes/logo-kodujdlapolski.png"); }
   .bottom-item__content--crossweb {
